@@ -540,6 +540,7 @@ var QuizWiz = function(config) {
     var ic = D.createElement('div');
     var icp = D.createElement('div');
     var ics = D.createElement('div');
+    var quizHeader = D.getElementsByClassName('quiz-header')[0];
     ic.classList.add('header-bar');
     icp.classList.add('header-bar-left');
     ics.classList.add('header-bar-right');
@@ -663,7 +664,7 @@ var QuizWiz = function(config) {
         updateParent.appendChild(advance2);
       }
     }
-    submission.scrollIntoView(); //this will scroll back up to the top after an update to the scores.
+    quizHeader.scrollIntoView(); //this will scroll back up to the top after an update to the scores.
   }
 
   function scanQuiz() {
