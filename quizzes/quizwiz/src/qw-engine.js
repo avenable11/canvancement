@@ -663,6 +663,7 @@ var QuizWiz = function(config) {
         updateParent.appendChild(advance2);
       }
     }
+    submission.scrollIntoView(); //this will scroll back up to the top after an update to the scores.
   }
 
   function scanQuiz() {
